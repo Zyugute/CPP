@@ -5,3 +5,6 @@ project(CPP)
 add_executable(CPP src/main.cpp)
 add_subdirectory(external/glfw)
 target_link_libraries(CPP glfw)
+
+add_subdirectory(external/glad)
+target_link_libraries(CPP glad)
